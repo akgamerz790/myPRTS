@@ -110,6 +110,7 @@
     <string name="local_files_empty_section_dialog_permission_rationale_accept" formatted="false">Give access</string>
     <string name="local_files_empty_section_button_go_to_settings" formatted="false">Go to Settings</string>
     <string name="context_menu_download" formatted="false">Download</string>
+    <string name="prts_download" formatted="false">PRTS Download</string>
     <string name="context_menu_undownload" formatted="false">Remove download</string>
     <string name="collection_downloaded" formatted="false">Downloaded</string>
     <string name="download_badge_downloaded_content_description" formatted="false">Downloaded</string>
