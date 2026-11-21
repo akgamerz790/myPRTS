@@ -38,16 +38,16 @@ jobs:
       - name: Unit tests
         run: ./gradlew :app:testDebugUnitTest :host-android:testDebugUnitTest :extensions:test :api-spotify:test :host-cdp:test
 
-      - name: Test reports
-        if: ${{ failure() }}
-        uses: actions/upload-artifact@v7
-        with:
-          name: test-reports
-          path: |
-            base/**/build/reports/tests/
-            base/**/build/test-results/
-          retention-days: 14
-          if-no-files-found: ignore
+      # - name: Test reports
+      #   if: ${{ failure() }}
+      #   uses: actions/upload-artifact@v7
+      #   with:
+      #     name: test-reports
+      #     path: |
+      #       base/**/build/reports/tests/
+      #       base/**/build/test-results/
+      #     retention-days: 14
+      #     if-no-files-found: ignore
 
       - name: Debug APK
         if: ${{ !startsWith(github.ref, 'refs/tags/v') }}
